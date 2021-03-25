@@ -1,28 +1,49 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Card, Table} from 'react-bootstrap';
+
 
 import { IGlobalState } from '../store/modules/user/types'
+import { Link } from 'react-router-dom';
 
 const AboutUs: React.FC = () => {
+
     const state = useSelector((state: IGlobalState) => state.users)
 
-    return (
-        <div>
-            <h1>Matriculados, Academia Accenture 2.1</h1>
-            <>
-            <div className="containerCard">
-                { state.map( (user, index) => (
-                    <div key={index}>
-                        <ul>
-                            <li>{user.name}</li>
-                        </ul>
-                    </div>
+    
+  
 
-                ))}
-                </div >
-            </>
-        </div>
-    );
+    return (
+        <>
+   
+         <Card className="containerCard">
+         <Card.Header as="h3">Matriculados, Academia Accenture 2.1</Card.Header>
+ 
+         <Card.Body>
+           <Table>
+             <thead>
+               <tr>
+                 <th>Nome</th>
+                 <th>E-Mail</th>
+                 <th>Idade</th>
+               </tr>
+             </thead>
+             <tbody>
+               {state.map( (user, index)  => (
+                 <>
+                   <tr key={index}>
+                     <td>{user.name}</td>
+                     <td>{user.email}</td>
+                     <td>{user.age}</td>
+                    
+                   </tr>
+                 </>
+               ))}
+             </tbody>
+           </Table>
+         </Card.Body>
+       </Card>
+   </> );
 }
 
 export default AboutUs;
