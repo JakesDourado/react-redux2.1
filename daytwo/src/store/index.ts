@@ -1,9 +1,6 @@
 import { createStore } from 'redux';
 
-
-
 import AllUsers from './modules/user/reducer';
-
 
 
 
