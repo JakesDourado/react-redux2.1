@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Card, Table, Pagination } from 'react-bootstrap';
+import { Card, Table } from 'react-bootstrap';
 
 import './styles.css';
 import { BsListCheck } from "react-icons/bs";
@@ -48,23 +48,7 @@ const AboutUs: React.FC = () => {
           </Table>
         </Card.Body>
       </Card>
-      <Pagination>
-        <Pagination.First />
-        <Pagination.Prev />
-        <Pagination.Item>{}</Pagination.Item>
-        <Pagination.Ellipsis />
-
-        <Pagination.Item>{10}</Pagination.Item>
-        <Pagination.Item>{11}</Pagination.Item>
-        <Pagination.Item active>{3}</Pagination.Item>
-        <Pagination.Item>{4}</Pagination.Item>
-        <Pagination.Item disabled>{5}</Pagination.Item>
-
-        <Pagination.Ellipsis />
-        <Pagination.Item>{5}</Pagination.Item>
-        <Pagination.Next />
-        <Pagination.Last />
-      </Pagination>
+      
     </>);
 }
 
