@@ -3,20 +3,20 @@ import { useSelector } from 'react-redux';
 import { Card, Table} from 'react-bootstrap';
 
 
-import { IGlobalState } from '../store/modules/user/types'
-import { Link } from 'react-router-dom';
+import { IGlobalState } from '../../store/modules/user/types';
+
 
 const AboutUs: React.FC = () => {
 
     const state = useSelector((state: IGlobalState) => state.users)
 
-    
+   
   
 
     return (
         <>
    
-         <Card className="containerCard">
+         <Card >
          <Card.Header as="h3">Matriculados, Academia Accenture 2.1</Card.Header>
  
          <Card.Body>
@@ -35,7 +35,7 @@ const AboutUs: React.FC = () => {
                      <td>{user.name}</td>
                      <td>{user.email}</td>
                      <td>{user.age}</td>
-                    
+                  
                    </tr>
                  </>
                ))}

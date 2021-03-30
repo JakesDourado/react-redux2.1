@@ -1,0 +1,26 @@
+.cardStyle article{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 30px;
+  
+  }
+  .cardStyle a svg{
+    color: rgb(17, 182, 204);
+  transition: 0.2s;
+  }
+  .cardStyle a svg:hover{
+    color: rgb(7, 92, 104);
+  
+  }
+  .cardStyle article p {
+    margin: 5px 20px 0 0;
+    color: rgb(116, 107, 124);
+    font-weight: bold;
+
+  }
+  .CardMargBotton{
+      margin-bottom: 25px;
+  }
+
+

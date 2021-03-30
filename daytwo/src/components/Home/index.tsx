@@ -1,12 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap';
 
 
-import api from '../service/api'
 
-import { IUser } from '../store/modules/user/types';
-import { addNewUser } from '../store/modules/user/actions';
+import api from '../../service/api'
+
+import { IUser } from '../../store/modules/user/types';
+import { addNewUser } from '../../store/modules/user/actions';
+import './styles.css';
 
 
 const Home: React.FC = () => {
@@ -20,16 +22,22 @@ const Home: React.FC = () => {
             }
         )
     }, [])
-  
+
 
     const handleUsers = useCallback((user: IUser) => {
         dispatch((addNewUser(user)))
     }, [dispatch])
-
+    ///**<div><button onClick={ ()=> toast.sucess{'jakes'}}>Toast </button></div>*/
     return (
-        <Card className="containerCard">
 
-            <Card.Header as="h3" ><strong>Hello</strong></Card.Header>
+
+        <Card className="CardMargBotton">
+
+            <Card.Header as="h3" >
+                <strong>
+                    Hello
+                </strong>
+                </Card.Header>
             <div className="cardStyle">
                 {users.map(user => (
 
