@@ -5,11 +5,16 @@
     padding: 10px 30px;
   
   }
-  .cardStyle a svg{
+  .cardStyle button{
+    border: none;
+    background: none;
+  }
+
+  .cardStyle button svg{
     color: rgb(17, 182, 204);
   transition: 0.2s;
   }
-  .cardStyle a svg:hover{
+  .cardStyle button svg:hover{
     color: rgb(7, 92, 104);
   
   }

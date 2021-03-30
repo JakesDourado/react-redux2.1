@@ -34,9 +34,9 @@ const AboutUs: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {state.map((user, index) => (
+              {state.map((user, id) => (
                 <>
-                  <tr key={index}>
+                  <tr key={id}>
                     <td>{user.name}</td>
                     <td>{user.email}</td>
                     <td>{user.age}</td>
