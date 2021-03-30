@@ -2,18 +2,8 @@
   padding: 0;
   margin: 0;
 }
-img{
 
- margin-bottom: -60px;
-}
-.accent{
-  width: 300px;
-  height: 300px;
-  left: 20px;
-    top: 20px;
-   
-    opacity:0.5;
-}
+
 body {
   
   /*background: linear-gradient(354deg, rgba(62,7,173,1) 10%, rgba(134,10,159,10) 35%, rgba(164,0,255,1) 100%);*/
@@ -21,6 +11,8 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   padding: 40px;
+
+
 }
 
 
@@ -30,7 +22,18 @@ body {
   max-width: 950px;
   margin: 20px auto;
 }
+.containerCard .accent{
 
+  width: 50%;
+  height: 100%;
+
+  position: absolute;
+  bottom: 10px;
+  left: 40vw;
+  
+  z-index:-1;
+  
+}
 
 
 

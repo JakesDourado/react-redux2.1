@@ -6,7 +6,7 @@ import Main from './page/Main';
 
 import './styles/Global.css';
 import LogoIma from './assets/main-logo.png';
-import Accenture from './assets/accenture.png';
+
 
 
 
@@ -16,7 +16,6 @@ const App: React.FC = () => {
       <Provider store={store}>
         <img src={LogoIma} alt="logo" />
         <Main />
-        <img className="accent" src={Accenture} alt="accenture" />
       </Provider>
     </>
   );

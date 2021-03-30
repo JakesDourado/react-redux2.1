@@ -33,10 +33,10 @@ const Home: React.FC = () => {
 
         <Card className="CardMargBotton">
 
-            <Card.Header as="h3" >
-                <strong>
-                    Hello
-                </strong>
+            <Card.Header  >
+                <h4>
+                    Alunos Cadastrados
+                </h4>
                 </Card.Header>
             <div className="cardStyle">
                 {users.map(user => (
