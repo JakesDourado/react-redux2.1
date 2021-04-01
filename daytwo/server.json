@@ -11,7 +11,12 @@
       "name": "Guilherme Natal",
       "email": "guilherme@email.com",
       "age": 22
+    },
+    {
+      "name": "Felipe de Paula",
+      "email": "fe@gmail.com",
+      "age": "36",
+      "id": 2
     }
-
   ]
 }
