@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Card, Table } from 'react-bootstrap';
+import { Card, Table, Form } from 'react-bootstrap';
 
 import './styles.css';
 import { BsListCheck } from "react-icons/bs";
@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
 
   return (
     <>
-
+   
       <Card >
         <Card.Header className="titles-item" >
           <BsListCheck />
@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
           </Table>
         </Card.Body>
       </Card>
-      
+
     </>);
 }
 

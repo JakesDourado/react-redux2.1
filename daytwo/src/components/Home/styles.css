@@ -35,5 +35,25 @@
 
 
 }
+.btnCad{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(44, 193, 212);
+  transition: 0.5s;
+  border: none;
+}
+.btnCad:hover{
+  
+  background: rgb(37, 168, 185);
+}
+.btnCad:focus{
+  background: rgb(37, 168, 185);
 
+
+
+}
+.btnCad:active{
+  background: rgb(30, 139, 153) !important;
+}
 
